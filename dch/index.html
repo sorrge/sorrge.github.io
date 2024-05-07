@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Content-Security-Policy" content="
+    default-src 'none'; 
+    script-src 'self';
+    connect-src *;
+    img-src 'self';
+    style-src 'self';
+    base-uri 'self';
+    form-action 'self';
+    ">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="rating" content="adult">
+    <title>dch</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">    
+</head>
+<body id="whole-page">
+    <div class="logo" id="logo">dch</div>
+    <div id="chat-container">
+        <input type="text" id="message-input" data-timestamp="99999999999999999999" placeholder="Type your message here...">
+    </div>
+    <div class="links-bar"><a href="https://github.com/sorrge/dch" target="_blank" rel="noopener noreferrer">GitHub</a> -
+        <a href="https://nkn.org/" target="_blank" rel="noopener noreferrer">NKN</a></div>
+    <div id="status-bar" class="status-bar">starting up</div>
+    <script defer src="lib/nkn.js"></script>
+    <script defer src="lib/rbtree.min.js"></script>
+    <script type="module" src="chat.js"></script>
+</body>
+</html>
